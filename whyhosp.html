@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Why Hospitalizations?</title>
+    <meta name="description" content="Why Hosipitalizations">
+    <meta name="keywords" content="COVID, COVID-19">
+    <style type="text/css">
+      #main-header{
+        text-align:center;
+        background-color:blue;
+        color:white;
+        padding:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Why Hospitalizations?</h1>
+    </header>
+    <br><br>
+
+    <a href="index.html">Go to CalifCOVID Data</a>
+    <hr>
+    <section>
+      <article class="post">
+        <h3>Why use hospitalization data as the main metric to understand COVID in an area?</h3>
+        <medium> "The most impt number to track right now, and indeed, the only number people should be paying attention to are new COVID positive hospitalizations. This is independent of the prevalence of testing, and is a direct measure of the burden on the healthcare system" - Stanford Professor and Co-Chair of Epidemiology Steve Goodman 3/28</medium><br><br>
+
+        <h3>We still do not have access to <em>new</em> COVID positive hospitalizations.</h3>
+        <medium>Instead we use current hospitalized (combination of positive and suspected) as the primary metric of the state of disease. Understand that this lags infections by approx 2 weeks. Hospitalizations are a more reliable metric because the clinical criteria that result in a patient being admitted to the hospital are more stable over space and time than "confirmed cases" which are highly confounded by variable levels of testing.</medium>
+        <br><br>
+
+        <h3>Why the heck then does everyone still use "cases"??</h3>
+        <medium>Lots of reasons, all of them unfortunate. <br>  1) it's available - "confirmed cases" are a definitive number that is very easy to get.<br>  2) it's defendable - "confirmed cases" are the standard that most mainstream sources lead with and using it doesn't open you up to criticism<br>  3) it's math-free - who wants do do math during a crisis (besides <a href="https://youtu.be/QvuQH4_05LI" taget="-blank">this guy's subscribers<a/>)</medium>
+        <br><br>
+
+        <h3>What we really want is "% Currently Infected"</h3>
+        <medium>If we could only know one number, it'd be this - the fraction of people in an area (your town, your zip code, your county, your workplace ...) that are currently infected and presumably can infect other people. This gives you a measure of "How bad is it out there?" and "Personally, what's my chance of getting infected?"</medium>
+        <br>
+        <h3>Use Youyang. You're most welcome!</h3>
+          <medium>I only know of one person estimating the % Currently Infected: Youyang Gu. His site IMHO is currently the best modeling effort out there. Youyang has been more accurate in his projections than all of the high profile, super well funded academic groups.
+          Here is the <a href="https://covid19-projections.com/us-ca" taget="-blank">Youyang Gu California Data Estimates and Projections.<a/> People seem to think the most important aspect of COVID modeling is predicting the future. My view is that the future of this disease is almost totally unpredictable because it is so depedent on both public opinion and government policy decisions. It is not helpful to show forecasts more than a few weeks out without heavy caveats that include a clear description of assumptions. Moreover all modelers offering up these medium to long range forecasts should include a reasonable minimum NPI's and maximum NPI's. Again, these need to be clealy explained and preferably standardized.<br>Estimating the current state of the disease should be a priority of the modeling community. The fact that we don't have a consensus source for % Current Infections is a huge problem. That's the starting motivation for CalifCOVID.org.
+        </medium><br>
+        <h3>Combining Suspected/PUI's with simple %</h3>
+          <medium>COVID-19 Suspcted (aka PUI's) are multipled by a constant % (default 20% on 5/27) and added to Positives to give a single number for Hospitalizations and ICU. Ideally we would know the COVID status of all patients. It seems as if testing capability is at the point where that's readily achievable (at end of May), however there are still 2 big problems that interact: 1) the time delay of getting diagnostic test results (even if turnaround is 24hrs) and 2) hospital data reporting. The raw data coming from the state of CA (CHHS) has 2 classifications of patients "COVID-19 Positive" and "Suspected COVID-19 Positive", but the Suspected part is misleading because only a small fraction of them actually have COVID. One source I know uses between 0-30% (early May) and another source very familiar with clinical testing from early March, said the overall % of people showing up at hospitals presenting with COVID consistent symptoms (ILI) is 8% (late April #). Looking at recent raw data, the proportions of Positives and Suspected vary widely by day and county. Sometimes Positives are far higher and there are only a few suspected, sometimes vice versa. I do not understand the system of hospital data reporting that is getting rolled up into this data set, but would like to. I do know that in SF in March, it was a mess, with some hositals sending screenshots, and people being sent physically to hospitals to try and collect information on the number of COVID patients there. We should have a system that tracks individual patients such that after a few days (assuming the test result delay is now less than that almost everywhere in CA), there is a single reliable COVID Positive Hospitalization number. But as far as I know, that's not available, and I doubt it will materialize any time soon. One would think with the CalREDIE data system and FHIR data standard, and multiple EMR platforms, that in 2020 in CA (or at least the SF Bay Area) that we'd have reliable information on the number of people admitted to hospitals with COVID-19. Unfortunately we don't. This is my best effort at getting to a useful form for this important metric.      
+          </medium>
+
+        <br><br>
+
+        <a href="https://youtu.be/v3O91fsxCf8?t=258">Video 5-12 - Scott Gottlieb on Need to Look at Hospitalizations not Cases</a>
+        <br><br>
+        <a href="https://fivethirtyeight.com/features/coronavirus-case-counts-are-meaningless/">Article 4-4 - 538 Coronavirus Case Counts Are Meaningless</a>
+        <br>
+        <small>Unless you know something about testing. And even then, it gets complicated.</small>
+      </article>
+
+
+    <footer id="Main Footer">
+      <p>CC 4.0 BY, 2020, CalifCOVID.org</p>
+    </footer>
+  </body>
+</html>
